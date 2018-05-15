@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="168dp"
+        android:background="@color/blue"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <com.example.smart.test1.view.CircleImageView
+            android:id="@+id/iv_avatar"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/icon_profile" />
+
+
+        <!-- <ImageView
+             android:id="@+id/iv_avatar"
+             android:layout_width="100dp"
+             android:layout_height="100dp"
+             android:layout_marginBottom="10dp"
+             android:layout_marginTop="15dp"
+             android:contentDescription="@string/todo"
+             android:src="@drawable/icon_profile" />-->
+
+        <TextView
+            android:id="@+id/tv_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btn_myWork"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/middle_button_style"
+                android:drawableEnd="@drawable/icon_arrow3"
+                android:drawableLeft="@drawable/icon_notify"
+                android:drawableRight="@drawable/icon_arrow3"
+                android:drawableStart="@drawable/icon_notify"
+                android:drawablePadding="8dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="14dp"
+                android:paddingRight="14dp"
+                android:text="@string/my_work"
+                android:textColor="@color/black" />
+
+
+            <Button
+                android:id="@+id/btn_myInfo"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/middle_button_style"
+                android:drawableEnd="@drawable/icon_arrow3"
+                android:drawableLeft="@drawable/icon_myinfo"
+                android:drawableRight="@drawable/icon_arrow3"
+                android:drawableStart="@drawable/icon_myinfo"
+                android:drawablePadding="8dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="14dp"
+                android:paddingRight="14dp"
+                android:text="@string/my_info"
+                android:textColor="@color/black" />
+
+
+            <Button
+                android:id="@+id/btn_settings"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/middle_button_style"
+                android:drawableEnd="@drawable/icon_arrow3"
+                android:drawableLeft="@drawable/icon_settings"
+                android:drawableRight="@drawable/icon_arrow3"
+                android:drawableStart="@drawable/icon_settings"
+                android:drawablePadding="8dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="14dp"
+                android:paddingRight="14dp"
+                android:text="@string/setting"
+                android:textColor="@color/black" />
+
+
+
+
+            <Button
+                android:id="@+id/btn_feedback"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/middle_button_style"
+                android:drawableEnd="@drawable/icon_arrow3"
+                android:drawableLeft="@drawable/icon_feedback"
+                android:drawableRight="@drawable/icon_arrow3"
+                android:drawableStart="@drawable/icon_feedback"
+                android:drawablePadding="8dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="14dp"
+                android:paddingRight="14dp"
+                android:text="@string/feedback"
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/btn_share"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/middle_button_style"
+                android:drawableEnd="@drawable/icon_arrow3"
+                android:drawableLeft="@drawable/icon_share"
+                android:drawablePadding="8dp"
+                android:drawableRight="@drawable/icon_arrow3"
+                android:drawableStart="@drawable/icon_share"
+                android:gravity="center_vertical"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:text="@string/share"
+                android:textColor="@color/black" />
+
+
+            <Button
+                android:id="@+id/btn_about"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/middle_button_style"
+                android:drawableEnd="@drawable/icon_arrow3"
+                android:drawableLeft="@drawable/icon_about"
+                android:drawableRight="@drawable/icon_arrow3"
+                android:drawableStart="@drawable/icon_about"
+                android:drawablePadding="8dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="14dp"
+                android:paddingRight="14dp"
+                android:text="@string/about"
+                android:textColor="@color/black" />
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+
+</LinearLayout>

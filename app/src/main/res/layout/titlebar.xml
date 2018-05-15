@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_titlebar"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/titlebar_height"
+    android:background="@color/blue"
+    android:fitsSystemWindows="true">
+
+    <Button
+        android:id="@+id/btn_backward"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="64dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:background="@color/blue"
+        android:drawableLeft="@drawable/icon_back"
+        android:drawableStart="@drawable/icon_back"
+        android:ellipsize="end"
+        android:gravity="center|start"
+        android:singleLine="true"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:singleLine="true"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btn_forward"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="56dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:background="@color/blue"
+        android:drawablePadding="6dp"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:singleLine="true"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:visibility="gone" />
+
+    <ImageButton
+        android:id="@+id/btn_map"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@null"
+        android:contentDescription="@string/todo"
+        android:gravity="center"
+        android:minWidth="24dp"
+        android:src="@drawable/icon_map"
+        android:visibility="gone"/>
+
+    <com.example.smart.test1.view.PickerView
+        android:id="@+id/btn_title_location"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@color/blue"
+        android:drawableEnd="@drawable/icon_arrow2"
+        android:drawableRight="@drawable/icon_arrow2"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxEms="5"
+        android:maxLines="1"
+        android:minWidth="30dp"
+        android:paddingLeft="16dp"
+        android:paddingStart="16dp"
+        android:text="@string/region"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:visibility="gone"
+        tools:ignore="RtlSymmetry" />
+
+
+    <RadioGroup
+        android:id="@+id/group_nav"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <RadioButton
+            android:id="@+id/rbtn_findPerson"
+            android:layout_width="64dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/radio_button_style2"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:text="@string/find_person"
+            android:textColor="@color/radiobutton_textcolor2"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/rbtn_findWork"
+            android:layout_width="64dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/radio_button_style2"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/find_work"
+            android:textColor="@color/radiobutton_textcolor2"
+            android:textSize="16sp" />
+
+    </RadioGroup>
+
+
+</RelativeLayout>

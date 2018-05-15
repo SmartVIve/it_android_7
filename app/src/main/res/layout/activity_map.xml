@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/titlebar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.baidu.mapapi.map.MapView
+            android:id="@+id/mapView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:focusable="true">
+        </com.baidu.mapapi.map.MapView>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true">
+            <Button
+                android:id="@+id/iv_location"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginBottom="52dp"
+                android:background="@drawable/btn_location_style" />
+        </LinearLayout>
+
+
+
+        <com.example.smart.test1.view.SlideBottomView
+            android:id="@+id/slideBottomView_person"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true">
+
+            <include layout="@layout/slide_person" />
+
+        </com.example.smart.test1.view.SlideBottomView>
+
+        <com.example.smart.test1.view.SlideBottomView
+            android:id="@+id/slideBottomView_work"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true">
+
+            <include layout="@layout/slide_work" />
+
+        </com.example.smart.test1.view.SlideBottomView>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

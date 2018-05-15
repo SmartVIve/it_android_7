@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_gray2"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/titlebar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="132dp"
+            android:layout_height="132dp"
+            android:layout_gravity="center"
+            android:contentDescription="@string/todo"
+            android:src="@drawable/icon_logo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/find_person"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btn_copyright"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/top_radius_button_style"
+            android:drawableEnd="@drawable/icon_arrow3"
+            android:drawableRight="@drawable/icon_arrow3"
+            android:gravity="start|center"
+            android:text="@string/copyright" />
+
+        <Button
+            android:id="@+id/btn_support"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginBottom="-1px"
+            android:layout_marginTop="-1px"
+            android:background="@drawable/middle_button_style"
+            android:drawableEnd="@drawable/icon_arrow3"
+            android:drawableRight="@drawable/icon_arrow3"
+            android:gravity="start|center"
+            android:text="@string/technical_support" />
+
+        <Button
+            android:id="@+id/btn_checkVersion"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/bottom_radius_button_style"
+            android:drawableEnd="@drawable/icon_arrow3"
+            android:drawableRight="@drawable/icon_arrow3"
+            android:gravity="start|center"
+            android:text="@string/version_update" />
+    </LinearLayout>
+</RelativeLayout>

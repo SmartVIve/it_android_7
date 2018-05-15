@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/titlebar" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="168dp"
+            android:contentDescription="@string/todo"
+            android:scaleType="centerCrop"
+            android:src="@drawable/bg_photo" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:orientation="vertical">
+
+
+            <com.example.smart.test1.view.CircleImageView
+                android:id="@+id/btn_camera"
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:src="@drawable/btn_camera" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingTop="8dp"
+                android:text="@string/photograph"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <Button
+            android:id="@+id/btn_name"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/middle_button_style"
+            android:drawableEnd="@drawable/icon_arrow3"
+            android:drawableRight="@drawable/icon_arrow3"
+            android:gravity="start|center"
+            android:stateListAnimator="@null"
+            android:text="@string/call" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="40dp"
+            android:layout_marginRight="40dp"
+            android:textColor="@color/gray"
+            tools:ignore="RelativeOverlap" />
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <com.example.smart.test1.view.PickerView
+            android:id="@+id/btn_birthdate"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/middle_button_style"
+            android:drawableEnd="@drawable/icon_arrow3"
+            android:drawableRight="@drawable/icon_arrow3"
+            android:gravity="start|center"
+            android:stateListAnimator="@null"
+            android:text="@string/birthday" />
+
+        <TextView
+            android:id="@+id/tv_birthday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="40dp"
+            android:layout_marginRight="40dp"
+            android:textColor="@color/gray"
+            tools:ignore="RelativeOverlap" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <com.example.smart.test1.view.PickerView
+            android:id="@+id/btn_education"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/middle_button_style"
+            android:drawableEnd="@drawable/icon_arrow3"
+            android:drawableRight="@drawable/icon_arrow3"
+            android:gravity="start|center"
+            android:stateListAnimator="@null"
+            android:text="@string/education" />
+
+        <TextView
+            android:id="@+id/tv_education"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="40dp"
+            android:layout_marginRight="40dp"
+            android:textColor="@color/gray" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <com.example.smart.test1.view.PickerView
+            android:id="@+id/btn_location"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/middle_button_style"
+            android:drawableEnd="@drawable/icon_arrow3"
+            android:drawableRight="@drawable/icon_arrow3"
+            android:gravity="start|center"
+            android:stateListAnimator="@null"
+            android:text="@string/now_live_city" />
+
+        <TextView
+            android:id="@+id/tv_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="40dp"
+            android:layout_marginRight="40dp"
+            android:textColor="@color/gray"
+            tools:ignore="RelativeOverlap" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/blue"
+        android:text="@string/save"
+        android:textColor="@color/white" />
+
+</LinearLayout>

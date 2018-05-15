@@ -1,0 +1,487 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/titlebar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="168dp"
+                    android:contentDescription="@string/todo"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/bg_photo" />
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:orientation="vertical">
+
+                    <com.example.smart.test1.view.CircleImageView
+                        android:id="@+id/btn_camera"
+                        android:layout_width="96dp"
+                        android:layout_height="96dp"
+                        android:src="@drawable/btn_camera" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:paddingTop="8dp"
+                        android:text="@string/photograph"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:drawableLeft="@drawable/icon_arrow4"
+                android:drawableStart="@drawable/icon_arrow4"
+                android:text="@string/basic_document"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                tools:ignore="RtlHardcoded" />
+
+
+            <EditText
+                android:id="@+id/tv_name"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginEnd="14dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="14dp"
+                android:layout_marginStart="24dp"
+                android:background="@color/white"
+                android:hint="@string/name"
+                android:inputType="text"
+                android:maxLength="6"
+                android:textColor="@color/black"
+                android:textColorHint="@color/gray"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginEnd="15dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginStart="25dp"
+                android:background="@color/light_gray" />
+
+            <com.example.smart.test1.view.PickerView
+                android:id="@+id/btn_birthdate"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginStart="24dp"
+                android:background="@color/white"
+                android:drawableEnd="@drawable/icon_arrow5"
+                android:drawableRight="@drawable/icon_arrow5"
+                android:gravity="center_vertical"
+                android:hint="@string/birthday"
+                android:textColor="@color/black"
+                android:textColorHint="@color/gray"
+                android:textSize="14sp" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginEnd="15dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginStart="25dp"
+                android:background="@color/light_gray" />
+
+            <com.example.smart.test1.view.PickerView
+                android:id="@+id/btn_location"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginStart="24dp"
+                android:background="@color/white"
+                android:drawableEnd="@drawable/icon_arrow5"
+                android:drawableRight="@drawable/icon_arrow5"
+                android:gravity="center_vertical"
+                android:hint="@string/now_live_city"
+                android:textColor="@color/black"
+                android:textColorHint="@color/gray"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="8dp"
+                android:drawableLeft="@drawable/icon_arrow4"
+                android:drawableStart="@drawable/icon_arrow4"
+                android:text="@string/professional_skills"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginLeft="28dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginStart="28dp">
+
+                <TextView
+                    android:id="@+id/level"
+                    android:layout_width="64dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="@string/level"
+                    android:textColor="@color/gray" />
+
+                <RadioGroup
+                    android:id="@+id/group_level"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rbtn_level1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/radio_button_style"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="@string/level1"
+                        android:textColor="@color/radiobutton_textcolor" />
+
+                    <RadioButton
+                        android:id="@+id/rbtn_level2"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/radio_button_style"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="@string/level2"
+                        android:textColor="@color/radiobutton_textcolor" />
+
+                    <RadioButton
+                        android:id="@+id/rbtn_level3"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/radio_button_style"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="@string/level3"
+                        android:textColor="@color/radiobutton_textcolor" />
+                </RadioGroup>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginLeft="28dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginStart="28dp">
+
+                <TextView
+                    android:layout_width="64dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="@string/work_time"
+                    android:textColor="@color/gray" />
+
+                <RadioGroup
+                    android:id="@+id/group_workTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rbtn_workTime1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/radio_button_style"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="@string/day_and_night"
+                        android:textColor="@color/radiobutton_textcolor" />
+
+                    <RadioButton
+                        android:id="@+id/rbtn_workTime2"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/radio_button_style"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="@string/day"
+                        android:textColor="@color/radiobutton_textcolor" />
+
+                    <RadioButton
+                        android:id="@+id/rbtn_workTime3"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/radio_button_style"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="@string/night"
+                        android:textColor="@color/radiobutton_textcolor" />
+                </RadioGroup>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginLeft="28dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginStart="28dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/eat"
+                    android:layout_width="64dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="@string/whether_eat"
+                    android:textColor="@color/gray" />
+
+                <RadioGroup
+                    android:id="@+id/group_eat"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rbtn_eat1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/radio_button_style"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="@string/unlimited"
+                        android:textColor="@color/radiobutton_textcolor" />
+
+                    <RadioButton
+                        android:id="@+id/rbtn_eat2"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/radio_button_style"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="@string/yes"
+                        android:textColor="@color/radiobutton_textcolor" />
+
+                    <RadioButton
+                        android:id="@+id/rbtn_eat3"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/radio_button_style"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="@string/no"
+                        android:textColor="@color/radiobutton_textcolor" />
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginLeft="28dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginStart="28dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/live"
+                    android:layout_width="64dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="@string/whether_live"
+                    android:textColor="@color/radiobutton_textcolor" />
+
+                <RadioGroup
+                    android:id="@+id/group_live"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rbtn_live1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/radio_button_style"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="@string/unlimited"
+                        android:textColor="@color/radiobutton_textcolor" />
+
+                    <RadioButton
+                        android:id="@+id/rbtn_live2"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/radio_button_style"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="@string/yes"
+                        android:textColor="@color/radiobutton_textcolor" />
+
+                    <RadioButton
+                        android:id="@+id/rbtn_live3"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/radio_button_style"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="@string/no"
+                        android:textColor="@color/radiobutton_textcolor" />
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="96dp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginLeft="28dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginStart="28dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="64dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="@string/self_introduction"
+                    android:textColor="@color/radiobutton_textcolor" />
+
+                <EditText
+                    android:id="@+id/et_introduction"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/edittext_style"
+                    android:gravity="start"
+                    android:hint="@string/describe"
+                    android:maxLength="50"
+                    android:maxLines="4"
+                    android:minLines="4"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/gray"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginLeft="28dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginStart="28dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="64dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="@string/service_price"
+                    android:textColor="@color/radiobutton_textcolor" />
+
+                <EditText
+                    android:id="@+id/et_price"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/edittext_style"
+                    android:gravity="end|center"
+                    android:inputType="number"
+                    android:maxLength="3"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/gray"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/price_hour"
+                    android:textColor="@color/gray"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/btn_release"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@color/blue"
+                android:text="@string/release"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
